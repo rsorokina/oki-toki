@@ -12,5 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //Session::forget('dashboard');
+    return view('dashboard');
+});
+
+
+Route::get('/news', function () {
+    return view('widgets.news');
+});
+
+Route::get('/bar', function () {
+    return view('widgets.bar');
+});
+
+
+Route::post('/set-dashboard', function () {
+    Session::put('dashboard', Request::input('dashboard'));
+    return Response::json(['dashboard'=> Session::get('dashboard')]);
+});
+
+Route::get('/get-dashboard', function () {
+    return Response::json(['dashboard'=> Session::get('dashboard')]);
 });
