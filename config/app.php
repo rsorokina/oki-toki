@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://test.oki-toki.net/'),
+    'url' => env('APP_URL', 'http://test.oki-toki.net'),
 
     /*
     |--------------------------------------------------------------------------
