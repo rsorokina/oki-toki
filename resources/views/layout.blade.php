@@ -2268,7 +2268,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-        <script src="{{asset('assets/js/script.js')}}"></script>
+        <script src="{{asset('js/script.js')}}"></script>
 
     </body>
 
