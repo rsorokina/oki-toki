@@ -2236,6 +2236,14 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="{{asset('metronic/global/plugins/excanvas.min.js')}}"></script> 
 <script src="{{asset('metronic/global/plugins/ie8.fix.min.js')}}"></script> 
 <![endif]-->
+
+
+
+
+
+
+
+
         <!-- BEGIN CORE PLUGINS -->
         <script src="{{asset('metronic/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('metronic/global/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
@@ -2256,10 +2264,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
-
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/vue.resource/1.2.1/vue-resource.min.js"></script>
+
         <!-- SortableJS
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.4.2/Sortable.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

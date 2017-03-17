@@ -160,6 +160,12 @@
                     </div>
             </div>
 
+
+
+
+
+
+
             <div id="sort">
                     <div class="portlet box grey-cascade sortable-item ui-state-default clearfix" v-for="(row, index) in rows">
                         <div class="portlet-title">
@@ -208,8 +214,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="portlet-body" >
-                                        <div class="scroller" style="height:200px" data-always-visible="1" data-rail-visible="1" data-rail-color="blue" data-handle-color="red" v-html="item.content"></div>
+                                    <div class="portlet-body">
+                                        <div class="scroller" style="height:200px"  v-html="item.content"></div>
                                     </div>
                                 </div>
                             </div>

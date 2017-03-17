@@ -101,7 +101,7 @@ var app = new Vue({
             });
 
             $( "#sort" ).on('mousemove', '.sortrow',function (e) {
-                var irow = $( this ).parent('.panel').index();
+                var irow = $( this ).parent('.portlet').index();
                 
                 $( ".sortrow" ).sortable({
                     start: function(event, ui) {
@@ -122,7 +122,19 @@ var app = new Vue({
                         });
                     }
                 });
+                $('.sortrow .scroller').slimScroll({
+                    //color: 'red',
+                    //railColor: 'blue',
+                    railVisible: true,
+                    allowPageScroll: true,
+                    alwaysVisible: true
+                })
+
             });
+
+
+
+
 
         });
 
