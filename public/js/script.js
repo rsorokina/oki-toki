@@ -104,7 +104,7 @@ var app = new Vue({
                 $('.caption.row-title a').editable({
                     validate: function(value) {
                         if ($.trim(value) == '') return 'This field is required';
-                        var index = $( this ).parent('.caption').parent('.portlet-title').parent('.portlet').index();
+                        var index = $( this ).parents('.portlet').index();
                         self.rows[index].title = value
                     }
                 });
@@ -148,7 +148,8 @@ var app = new Vue({
                 $('.sortrow .caption a').editable({
                     validate: function(value) {
                         if ($.trim(value) == '') return 'This field is required';
-                        var index = $( this ).parent('.caption').parent('.portlet-title').parent('.portlet').parent('.sortable-item').index();
+                        var irow = $( this ).parents('.sortable-item').parents('.portlet').index();
+                        var index = $( this ).parents('.sortable-item').index();
                         self.rows[irow].items[index].title = value
                     }
                 });
