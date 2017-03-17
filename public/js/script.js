@@ -100,6 +100,17 @@ var app = new Vue({
                 }
             });
 
+            $( "#sort" ).on('mousemove', '.grey-cascade',function (e) {
+                $('.caption.row-title a').editable({
+                    validate: function(value) {
+                        if ($.trim(value) == '') return 'This field is required';
+                        var index = $( this ).parent('.caption').parent('.portlet-title').parent('.portlet').index();
+                        self.rows[index].title = value
+                    }
+                });
+            })
+
+
             $( "#sort" ).on('mousemove', '.sortrow',function (e) {
                 var irow = $( this ).parent('.portlet').index();
                 
@@ -122,6 +133,9 @@ var app = new Vue({
                         });
                     }
                 });
+
+
+
                 $('.sortrow .scroller').slimScroll({
                     //color: 'red',
                     //railColor: 'blue',
@@ -129,6 +143,15 @@ var app = new Vue({
                     allowPageScroll: true,
                     alwaysVisible: true
                 })
+
+
+                $('.sortrow .caption a').editable({
+                    validate: function(value) {
+                        if ($.trim(value) == '') return 'This field is required';
+                        var index = $( this ).parent('.caption').parent('.portlet-title').parent('.portlet').parent('.sortable-item').index();
+                        self.rows[irow].items[index].title = value
+                    }
+                });
 
             });
 
@@ -152,7 +175,6 @@ var app = new Vue({
         addRow: function() {
             var r = {
                 show: true,
-                change: false,
                 title: 'New row',
                 items: []
             }
@@ -169,7 +191,6 @@ var app = new Vue({
 
         addWidget: function(widget) {
             var newWidget = JSON.parse(JSON.stringify(widget))
-            newWidget.change = false
             this.getWidgetContent(newWidget)
             this.rows[this.rowindex].items.push(newWidget)
 
@@ -199,10 +220,8 @@ var app = new Vue({
 
             var rows = JSON.parse(JSON.stringify(this.rows))
             rows.forEach(function (row, i) {
-                row.change = false
                 row.items.forEach(function (item, k) {
                     item.content = ''
-                    item.change = false
                 })
             })
 

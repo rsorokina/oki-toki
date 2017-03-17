@@ -33,6 +33,24 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="{{asset('metronic/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('metronic/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
+
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="{{asset('metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/bootstrap-editable/inputs-ext/address/address.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('metronic/global/plugins/select2/css/select2-bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+
+
+
+
+
+
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="{{asset('metronic/global/css/components.min.css')}}" rel="stylesheet" id="style_components" type="text/css" />
         <link href="{{asset('metronic/global/css/plugins.min.css')}}" rel="stylesheet" type="text/css" />
@@ -2252,9 +2270,27 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="{{asset('metronic/global/plugins/jquery.blockui.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('metronic/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
+
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="{{asset('metronic/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/moment.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/jquery.mockjax.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-editable/inputs-ext/address/address.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/wysihtml5.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/bootstrap-typeahead/bootstrap3-typeahead.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('metronic/global/plugins/select2/js/select2.full.min.js')}}" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src="{{asset('metronic/global/scripts/app.min.js')}}" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="{{asset('metronic/pages/scripts/form-editable.min.js')}}" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <script src="{{asset('metronic/layouts/layout/scripts/layout.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('metronic/layouts/layout/scripts/demo.min.js')}}" type="text/javascript"></script>

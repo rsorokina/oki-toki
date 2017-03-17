@@ -169,9 +169,8 @@
             <div id="sort">
                     <div class="portlet box grey-cascade sortable-item ui-state-default clearfix" v-for="(row, index) in rows">
                         <div class="portlet-title">
-                            <div class="caption">
-                                <span v-on:click="row.change = !row.change" v-if="!row.change" v-text="row.title"></span>
-                                <input type="text" v-model="row.title" v-if="row.change" v-on:mouseout="row.change = !row.change" style="color: #000;">
+                            <div class="caption row-title">
+                                <a href="avascript:;" v-text="row.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
                             </div>
                             <div class="actions">
                                 <a href="javascript:;" class="btn btn-default btn-sm grey-cascade" v-on:click="setRowIndex(index)" data-toggle="modal" data-target="#widgetModal">
@@ -196,9 +195,8 @@
                                 <div class="portlet box" :class="item.class">
                                     <div class="portlet-title">
                                         <div class="caption">
-                                            <i class="fa fa-gift" v-if="!item.change"></i>
-                                            <span v-text="item.title" v-if="!item.change" v-on:click="item.change = !item.change"></span>
-                                            <input type="text" v-model="item.title" v-if="item.change" v-on:mouseout="item.change = !item.change" style="color: #000;">
+                                            <i class="fa fa-gift"></i>
+                                            <a href="avascript:;" v-text="item.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
                                         </div>
                                         <div class="actions">
                                             <div class="btn-group">
