@@ -170,7 +170,7 @@
                     <div class="portlet box grey-cascade sortable-item ui-state-default clearfix" v-for="(row, index) in rows">
                         <div class="portlet-title">
                             <div class="caption row-title">
-                                <a href="avascript:;" v-text="row.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
+                                <a href="javascript:;" v-text="row.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
                             </div>
                             <div class="actions">
                                 <a href="javascript:;" class="btn btn-default btn-sm grey-cascade" v-on:click="setRowIndex(index)" data-toggle="modal" data-target="#widgetModal">
@@ -196,7 +196,7 @@
                                     <div class="portlet-title">
                                         <div class="caption">
                                             <i class="fa fa-gift"></i>
-                                            <a href="avascript:;" v-text="item.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
+                                            <a href="javascript:;" v-text="item.title" style="color: #fff; border-bottom: dashed 1px #fff"></a>
                                         </div>
                                         <div class="actions">
                                             <div class="btn-group">
